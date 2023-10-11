@@ -64,6 +64,8 @@ const createProxyServer = () => {
         value = `http://localhost:${port}`;
 
         routers[normalizeUrl(key)] = value;
+
+        console.log(`Route ${key} -> ${value}`);
     });
 
     // Setup proxy middleware
